@@ -82,4 +82,5 @@ print ("Copied dictionary:  ", copied_dict)  # Output: {'name': 'Alice', 'age': 
 duplicate_key_dict = {"key1": "value1", "key2": "value2", "key1": "value3"}
 print ("Dictionary with duplicate keys:  ", duplicate_key_dict)  # Output: {'key1': 'value3', 'key2': 'value2'} - 'key1' has the value 'value3' because it overwrote 'value1'       
 
-
+dict1 = dict(key1='val1', key2='val2')
+print(dict1)
