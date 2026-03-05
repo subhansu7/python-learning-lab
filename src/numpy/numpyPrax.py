@@ -69,3 +69,22 @@ print ("Original Array : \n", arr)
 reshaped_arr = arr.reshape(3,4)
 print ("Reshaped Array : \n", reshaped_arr)
 
+#slicing of reshaped array
+print ("Sliced Array - Sliced in rows and columns: \n", reshaped_arr[1:3, 0:2]) 
+print ("Sliced Array - sliced in rows : \n", reshaped_arr[1:3,]) 
+print ("Sliced Array - sliced in columns : \n", reshaped_arr[:, 0:2])
+print ("Sliced array - sliced in columns : \n", reshaped_arr[1,-1])
+
+#print reverse of an array
+print ("Original Array : \n", reshaped_arr)
+print ("Reversed Array : \n", reshaped_arr[::-1])
+#If we slice an array beyiond its limits, it will not throw an error but will return an empty array
+print (reshaped_arr[-4::-3]) 
+print (reshaped_arr)
+#print dimension of an array
+print ("Dimension of reshaped array : \n", reshaped_arr.ndim)   
+print ("Shape of reshaped array : \n", reshaped_arr.shape)
+
+
+
+
