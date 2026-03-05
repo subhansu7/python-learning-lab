@@ -57,3 +57,10 @@ print (randintarr)
 #Create 2d array of eye matrix
 eyearr = np.eye(4,dtype=int)
 print (eyearr)
+
+#reshape array
+#print numpy array of 12 numbers into 3 rows and 4 columns
+arr = np.arange(12)
+print ("Original Array : \n", arr)
+reshaped_arr = arr.reshape(3,4)
+print ("Reshaped Array : \n", reshaped_arr)
