@@ -22,16 +22,16 @@ print(len(basketball.columns))
 print("Summary of the dataset :")
 print(basketball.info())
 
-#print summary statistics of the dataset
-print("Summary statistics of the dataset :")
-print(basketball.describe())
-
 #print shape of the dataset
 print("Shape of the dataset :")
 print(basketball.shape)
 
-#check for missing values in the dataset
+#check for missing values in the dataset. Count null values in each column.
 print("Missing values in the dataset :")
+#isnull() function returns a boolean DataFrame where True indicates missing values 
+#and False indicates non-missing values.
+print(basketball.isnull())
+#count number of missing values in each column
 print(basketball.isnull().sum())
 
 #check column - college where data is missing
@@ -46,4 +46,12 @@ print(basketball['college'].isnull().sum())
 print("Rows where player_name is Gheorghe Muresan :")
 print(basketball[basketball['player_name'] == 'Gheorghe Muresan']['college'])
 
+#isna() function is an alias for isnull() function. It returns a boolean DataFrame where True indicates missing values and False indicates non-missing values.
+print("Missing values in the column 'college' using isna() function :") 
+print(basketball['college'].isna())
+print("Number of missing values in the column 'college' using isna() function :")
+print(basketball['college'].isna().sum())
 
+#print summary statistics of the dataset
+print("Summary statistics of the dataset :")
+print(basketball.describe())
