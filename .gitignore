@@ -2,4 +2,5 @@
 .ipynb_checkpoints/
 *-checkpoint.ipynb
 .vscode/settings.json
-data/ml/*.jpg
+data/ml/*.jpg'
+src/TestProjects/*.py
