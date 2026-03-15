@@ -144,3 +144,4 @@ print(my_list[4:2:-1])
 #For below case, step is negative, default start  index is length of list -1, 
 # Default stop index is -1, so it not ignore last element in reverse order.
 print(my_list[::-1]) # Output: [50, 40, 30, 20, 10] (reverse order) 
+
