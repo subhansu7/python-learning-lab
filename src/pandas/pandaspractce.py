@@ -52,6 +52,7 @@ print(basketball['college'].isna())
 print("Number of missing values in the column 'college' using isna() function :")
 print(basketball['college'].isna().sum())
 
-#print summary statistics of the dataset
-print("Summary statistics of the dataset :")
-print(basketball.describe())
+#print two columns/atributes
+print (basketball[['player_name', 'age']])
+
+#above can be used to split columns as per cate
