@@ -1,8 +1,14 @@
 import pandas as pd
 
-#basketball = pd.read_csv("../../data/ml/basketball.csv")
-basketball = pd.read_csv("../../data/ml/nba_all_seasons.csv")
+
+vmcloud = pd.read_csv("../../data/ml/vmCloud_data.csv")
 
 #print summary statistics of the dataset
 print("Summary statistics of the dataset :")
-print(basketball.describe())
+print(vmcloud.describe())
+
+#print dataset info
+print("Info of the dataset :")
+print(vmcloud.info())
+
+
