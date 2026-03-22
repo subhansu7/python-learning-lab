@@ -4,3 +4,4 @@
 .vscode/settings.json
 data/ml/*.jpg'
 src/TestProjects/*.py
+data/ml/vmCloud_data.csv
